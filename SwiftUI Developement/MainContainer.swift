@@ -28,23 +28,8 @@ struct MainContainer: View {
 }
 
 struct MainContainer_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-                MainContainer(rewardsClientFabric: MockRewardsClientFabric(delay: 1))
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			MainContainer(rewardsClientFabric: MockRewardsClientFabric(delay: 1))
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        MainContainer(rewardsClientFabric: MockRewardsClientFabric(delay: 1))
+            .exhaustivePreview()
     }
 }
