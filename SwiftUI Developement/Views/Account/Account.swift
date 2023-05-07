@@ -11,6 +11,8 @@ struct Account: View {
 					Section {
 						UserInfoItem(account: model.account)
 					}
+                    .listRowBackground(ThemeColor.listRow)
+                    
 					Section {
 						KeyValueListItem(
 							key: "Student ID",
@@ -32,7 +34,10 @@ struct Account: View {
 							value: model.account.details.house
 						)
 					}
-				}.listStyle(.insetGrouped)
+                    .listRowBackground(ThemeColor.listRow)
+				}
+                .listStyle(.insetGrouped)
+                .setupListStyle()
 				VStack {
 					Button(action: {
 						print("First button is tapped")
@@ -47,31 +52,18 @@ struct Account: View {
 									.stroke(Color.blue, lineWidth: 1)
 							)
 					}
-				}.padding()
-			}.background(Color(.systemBackground))
-				.navigationTitle("Account")
+				}
+                .padding()
+			}
+            .background(ThemeColor.listBackground)
+            .navigationTitle("Account")
 		}
 	}
 }
 
 struct Account_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-				Account()
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			Account()
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        Account()
+            .exhaustivePreview()
 	}
 }

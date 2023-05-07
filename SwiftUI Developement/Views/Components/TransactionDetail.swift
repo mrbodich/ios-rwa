@@ -1,40 +1,40 @@
 import SwiftUI
 
 struct TransactionDetail: View {
+    let title: String?
+    let amount: Float?
+    let isBird: Bool?
+    
     var body: some View {
 		VStack(alignment: .center) {
-			Image("Outflow")
-			Text("Starbucks")
-			Text("-$10.54")
+            Image(isBird == true ? "Bird" :"Outflow")
+			Text(title ?? "Transaction")
+            Text(String(format: "$%.2f", amount ?? 199.99).replacingOccurrences(of: "$-", with: "-$"))
 				.bold()
 				.font(.title)
-			Text("Congratulations on earning your bird!")
-				.font(.footnote)
-				.foregroundColor(Color(.systemGray))
-		}.padding()
-			.background(Color(.systemGray6))
-			.cornerRadius(12)
+            Text("Congratulations on earning your bird!")
+                .font(.footnote)
+                .foregroundColor(Color(.systemGray))
+                .opacity(isBird == true ? 1 : 0)
+		}
+        .frame(maxWidth: .infinity, alignment: .center)
+        .padding(.vertical, 32)
+//        .background(Color(.systemGray6))
+        .cornerRadius(12)
+        .redacted(reason: title == nil || amount == nil || isBird == nil ? .placeholder : [])
     }
 }
 
 struct TransactionDetail_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-				TransactionDetail()
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			TransactionDetail()
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        VStack {
+            TransactionDetail(title: "Starbucks",
+                              amount: -10.45,
+                              isBird: true)
+            TransactionDetail(title: "McDonalds",
+                              amount: 12.15,
+                              isBird: false)
+        }
+        .exhaustivePreview()
 	}
 }

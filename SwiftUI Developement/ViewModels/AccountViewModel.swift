@@ -6,6 +6,8 @@ final class AccountViewModel: ObservableObject {
 	@Published private(set) var account = AccountInfo()
 
 	private func fetch() {
-		APIService().getAccount { self.account = $0 }
+        APIService().getAccount { [weak self] in
+            self?.account = $0
+        }
 	}
 }

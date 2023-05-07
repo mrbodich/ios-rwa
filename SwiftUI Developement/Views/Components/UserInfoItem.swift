@@ -23,12 +23,6 @@ struct UserInfoItem: View {
 }
 
 struct UserInfoItem_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static let account = AccountInfo(
 		firstName: "Luke",
 		lastName: "Skywalker",
@@ -36,16 +30,7 @@ struct UserInfoItem_Previews: PreviewProvider {
 	)
 
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-				UserInfoItem(account: account)
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			UserInfoItem(account: account)
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        UserInfoItem(account: account)
+            .exhaustivePreview()
 	}
 }
