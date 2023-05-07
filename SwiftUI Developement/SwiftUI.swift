@@ -4,7 +4,9 @@ import SwiftUI
 struct SwiftUI: App {
     var body: some Scene {
         WindowGroup {
-            MainContainer()
+            MainContainer(
+                rewardsClientFabric: RemoteRewardsClientFabric()
+            )
         }
     }
 }

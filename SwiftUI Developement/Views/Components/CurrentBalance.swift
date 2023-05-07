@@ -11,36 +11,19 @@ struct CurrentBalance: View {
 			Text("$139.47")
 				.bold()
 				.font(.title)
-		}.padding()
-			.background(Color(.systemGray6))
-			.cornerRadius(12)
+		}
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.all, 12)
+        .cornerRadius(12)
     }
 }
 
 struct CurrentBalance_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-				CurrentBalance(
-					date: Date.now,
-					balance: 139.47
-				)
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			CurrentBalance(
-				date: Date.now,
-				balance: 139.47
-			)
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        CurrentBalance(
+            date: Date.now,
+            balance: 139.47
+        )
+        .exhaustivePreview()
 	}
 }

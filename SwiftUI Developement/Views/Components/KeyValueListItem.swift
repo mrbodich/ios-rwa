@@ -9,39 +9,21 @@ struct KeyValueListItem: View {
 		HStack {
 			Text(key)
 			Spacer(minLength: 32)
-			Text(value ?? "")
+			Text(value ?? key)
 				.lineLimit(1)
-				.redacted(reason: .placeholder)
+                .redacted(reason: value == nil ? .placeholder : [])
 				.truncationMode(truncation!)
 		}
     }
 }
 
 struct KeyValueListItem_Previews: PreviewProvider {
-	static let typeSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	]
-
 	static var previews: some View {
-		Group {
-			ForEach(typeSizes, id: \.self) { size in
-				KeyValueListItem(
-					key: "House",
-					value: "House of Waterloo",
-					truncation: .middle
-				)
-					.environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			KeyValueListItem(
-				key: "Student ID",
-				value: "0342"
-			)
-				.background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        KeyValueListItem(
+            key: "House",
+            value: "House of Waterloo",
+            truncation: .middle
+        )
+        .exhaustivePreview()
 	}
 }
