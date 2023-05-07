@@ -21,7 +21,44 @@
 		BBBE93C12745E41F007B24DD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE93C02745E41F007B24DD /* Account.swift */; };
 		BBD307EC274B019300CDD95A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD307EB274B019300CDD95A /* Date.swift */; };
 		BBD307EE274B11AF00CDD95A /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD307ED274B11AF00CDD95A /* Int.swift */; };
+		E6BE84432A068075006B8690 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84422A068075006B8690 /* CreditCardView.swift */; };
+		E6BE84462A068FD7006B8690 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84452A068FD7006B8690 /* RewardsView.swift */; };
+		E6BE84482A069017006B8690 /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84472A069017006B8690 /* TransactionDetailsView.swift */; };
+		E6BE844A2A0690C0006B8690 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84492A0690C0006B8690 /* RewardsViewModel.swift */; };
+		E6BE844C2A069137006B8690 /* RewardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE844B2A069137006B8690 /* RewardsModel.swift */; };
+		E6BE844E2A069168006B8690 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE844D2A069168006B8690 /* TransactionModel.swift */; };
+		E6BE84512A06934C006B8690 /* RewardsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84502A06934C006B8690 /* RewardsClient.swift */; };
+		E6BE845A2A0697C5006B8690 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84592A0697C5006B8690 /* APIServiceTests.swift */; };
+		E6F39D0C2A06A43400FD59EE /* TransactionsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D0B2A06A43400FD59EE /* TransactionsClient.swift */; };
+		E6F39D0E2A06A53700FD59EE /* RemoteRewardsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D0D2A06A53700FD59EE /* RemoteRewardsClient.swift */; };
+		E6F39D102A06A56200FD59EE /* MockRewardsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D0F2A06A56200FD59EE /* MockRewardsClient.swift */; };
+		E6F39D122A06B50000FD59EE /* RemoteTransactionsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D112A06B50000FD59EE /* RemoteTransactionsClient.swift */; };
+		E6F39D142A06B53400FD59EE /* MockTransactionsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D132A06B53400FD59EE /* MockTransactionsClient.swift */; };
+		E6F39D172A06B5EC00FD59EE /* TransactionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D162A06B5EC00FD59EE /* TransactionClient.swift */; };
+		E6F39D192A06B60D00FD59EE /* RemoteTransactionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D182A06B60D00FD59EE /* RemoteTransactionClient.swift */; };
+		E6F39D1B2A06B64D00FD59EE /* MockTransactionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D1A2A06B64D00FD59EE /* MockTransactionClient.swift */; };
+		E6F39D1D2A06B69E00FD59EE /* RewardsClientFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D1C2A06B69E00FD59EE /* RewardsClientFabric.swift */; };
+		E6F39D202A06B71C00FD59EE /* RemoteRewardsClientFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D1F2A06B71C00FD59EE /* RemoteRewardsClientFabric.swift */; };
+		E6F39D222A06B77E00FD59EE /* MockRewardsClientFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D212A06B77E00FD59EE /* MockRewardsClientFabric.swift */; };
+		E6F39D242A06B80F00FD59EE /* TransactionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D232A06B80F00FD59EE /* TransactionDetailsViewModel.swift */; };
+		E6F39D282A06BB6600FD59EE /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D272A06BB6600FD59EE /* TransactionsListView.swift */; };
+		E6F39D2A2A06BD1E00FD59EE /* TransactionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D292A06BD1D00FD59EE /* TransactionListItem.swift */; };
+		E6F39D2C2A06C91C00FD59EE /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D2B2A06C91C00FD59EE /* View+Extension.swift */; };
+		E6F39D2E2A06CD6F00FD59EE /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D2D2A06CD6F00FD59EE /* Navigation.swift */; };
+		E6F39D302A06D20900FD59EE /* CommonComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D2F2A06D20900FD59EE /* CommonComponents.swift */; };
+		E6F39D3C2A07B0B000FD59EE /* RandomAccessCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D3B2A07B0B000FD59EE /* RandomAccessCollection+Extension.swift */; };
+		E6F39D3F2A07B57B00FD59EE /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F39D3E2A07B57B00FD59EE /* ColorConstants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6BE845B2A0697C5006B8690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB29304527452175005E81FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB29304C27452175005E81FC;
+			remoteInfo = "SwiftUI Developement";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BB19C282274613B900C64FF9 /* KeyValueListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueListItem.swift; sourceTree = "<group>"; };
@@ -39,10 +76,45 @@
 		BBBE93C02745E41F007B24DD /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		BBD307EB274B019300CDD95A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		BBD307ED274B11AF00CDD95A /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		E6BE84422A068075006B8690 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		E6BE84452A068FD7006B8690 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		E6BE84472A069017006B8690 /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
+		E6BE84492A0690C0006B8690 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
+		E6BE844B2A069137006B8690 /* RewardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsModel.swift; sourceTree = "<group>"; };
+		E6BE844D2A069168006B8690 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		E6BE84502A06934C006B8690 /* RewardsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsClient.swift; sourceTree = "<group>"; };
+		E6BE84572A0697C5006B8690 /* SwiftUI AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI AssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BE84592A0697C5006B8690 /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		E6F39D0B2A06A43400FD59EE /* TransactionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsClient.swift; sourceTree = "<group>"; };
+		E6F39D0D2A06A53700FD59EE /* RemoteRewardsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRewardsClient.swift; sourceTree = "<group>"; };
+		E6F39D0F2A06A56200FD59EE /* MockRewardsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRewardsClient.swift; sourceTree = "<group>"; };
+		E6F39D112A06B50000FD59EE /* RemoteTransactionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTransactionsClient.swift; sourceTree = "<group>"; };
+		E6F39D132A06B53400FD59EE /* MockTransactionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionsClient.swift; sourceTree = "<group>"; };
+		E6F39D162A06B5EC00FD59EE /* TransactionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionClient.swift; sourceTree = "<group>"; };
+		E6F39D182A06B60D00FD59EE /* RemoteTransactionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTransactionClient.swift; sourceTree = "<group>"; };
+		E6F39D1A2A06B64D00FD59EE /* MockTransactionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionClient.swift; sourceTree = "<group>"; };
+		E6F39D1C2A06B69E00FD59EE /* RewardsClientFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsClientFabric.swift; sourceTree = "<group>"; };
+		E6F39D1F2A06B71C00FD59EE /* RemoteRewardsClientFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRewardsClientFabric.swift; sourceTree = "<group>"; };
+		E6F39D212A06B77E00FD59EE /* MockRewardsClientFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRewardsClientFabric.swift; sourceTree = "<group>"; };
+		E6F39D232A06B80F00FD59EE /* TransactionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewModel.swift; sourceTree = "<group>"; };
+		E6F39D272A06BB6600FD59EE /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		E6F39D292A06BD1D00FD59EE /* TransactionListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListItem.swift; sourceTree = "<group>"; };
+		E6F39D2B2A06C91C00FD59EE /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		E6F39D2D2A06CD6F00FD59EE /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		E6F39D2F2A06D20900FD59EE /* CommonComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonComponents.swift; sourceTree = "<group>"; };
+		E6F39D3B2A07B0B000FD59EE /* RandomAccessCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Extension.swift"; sourceTree = "<group>"; };
+		E6F39D3E2A07B57B00FD59EE /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB29304A27452175005E81FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BE84542A0697C5006B8690 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				BB19C28927462FAC00C64FF9 /* AccountInfo.swift */,
+				E6BE844B2A069137006B8690 /* RewardsModel.swift */,
+				E6BE844D2A069168006B8690 /* TransactionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -63,7 +137,7 @@
 		BB19C28B27462FD100C64FF9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BB19C28C27462FE000C64FF9 /* APIService.swift */,
+				E6BE844F2A069336006B8690 /* Networking */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -72,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				BB19C28F2746347700C64FF9 /* AccountViewModel.swift */,
+				E6BE84492A0690C0006B8690 /* RewardsViewModel.swift */,
+				E6F39D232A06B80F00FD59EE /* TransactionDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -80,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				BB29304F27452175005E81FC /* SwiftUI Developement */,
+				E6BE84582A0697C5006B8690 /* SwiftUI AssessmentTests */,
 				BB29304E27452175005E81FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				BB29304D27452175005E81FC /* SwiftUI Assessment.app */,
+				E6BE84572A0697C5006B8690 /* SwiftUI AssessmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,10 +197,14 @@
 		BB29305E27452F3D005E81FC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E6F39D292A06BD1D00FD59EE /* TransactionListItem.swift */,
 				BB19C282274613B900C64FF9 /* KeyValueListItem.swift */,
 				BB19C2842746172A00C64FF9 /* UserInfoItem.swift */,
 				BBA1FC47274844BA0049BEE9 /* CurrentBalance.swift */,
 				BBA1FC49274844CB0049BEE9 /* TransactionDetail.swift */,
+				E6BE84422A068075006B8690 /* CreditCardView.swift */,
+				E6F39D2F2A06D20900FD59EE /* CommonComponents.swift */,
+				E6F39D3E2A07B57B00FD59EE /* ColorConstants.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,7 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				BB29305E27452F3D005E81FC /* Components */,
-				BBBE93C02745E41F007B24DD /* Account.swift */,
+				E6BE84442A068FC3006B8690 /* Rewards */,
+				E6F39D3D2A07B11C00FD59EE /* Account */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,8 +224,89 @@
 			children = (
 				BBD307EB274B019300CDD95A /* Date.swift */,
 				BBD307ED274B11AF00CDD95A /* Int.swift */,
+				E6F39D2B2A06C91C00FD59EE /* View+Extension.swift */,
+				E6F39D2D2A06CD6F00FD59EE /* Navigation.swift */,
+				E6F39D3B2A07B0B000FD59EE /* RandomAccessCollection+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E6BE84442A068FC3006B8690 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE84452A068FD7006B8690 /* RewardsView.swift */,
+				E6BE84472A069017006B8690 /* TransactionDetailsView.swift */,
+				E6F39D272A06BB6600FD59EE /* TransactionsListView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		E6BE844F2A069336006B8690 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BB19C28C27462FE000C64FF9 /* APIService.swift */,
+				E6F39D1E2A06B6A500FD59EE /* RewardsClientFabric */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E6BE84522A069352006B8690 /* RewardsClient */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE84502A06934C006B8690 /* RewardsClient.swift */,
+				E6F39D0D2A06A53700FD59EE /* RemoteRewardsClient.swift */,
+				E6F39D0F2A06A56200FD59EE /* MockRewardsClient.swift */,
+			);
+			path = RewardsClient;
+			sourceTree = "<group>";
+		};
+		E6BE84582A0697C5006B8690 /* SwiftUI AssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE84592A0697C5006B8690 /* APIServiceTests.swift */,
+			);
+			path = "SwiftUI AssessmentTests";
+			sourceTree = "<group>";
+		};
+		E6F39D0A2A06A41D00FD59EE /* TransactionsClient */ = {
+			isa = PBXGroup;
+			children = (
+				E6F39D0B2A06A43400FD59EE /* TransactionsClient.swift */,
+				E6F39D112A06B50000FD59EE /* RemoteTransactionsClient.swift */,
+				E6F39D132A06B53400FD59EE /* MockTransactionsClient.swift */,
+			);
+			path = TransactionsClient;
+			sourceTree = "<group>";
+		};
+		E6F39D152A06B5D800FD59EE /* TransactionClient */ = {
+			isa = PBXGroup;
+			children = (
+				E6F39D162A06B5EC00FD59EE /* TransactionClient.swift */,
+				E6F39D182A06B60D00FD59EE /* RemoteTransactionClient.swift */,
+				E6F39D1A2A06B64D00FD59EE /* MockTransactionClient.swift */,
+			);
+			path = TransactionClient;
+			sourceTree = "<group>";
+		};
+		E6F39D1E2A06B6A500FD59EE /* RewardsClientFabric */ = {
+			isa = PBXGroup;
+			children = (
+				E6F39D1C2A06B69E00FD59EE /* RewardsClientFabric.swift */,
+				E6F39D1F2A06B71C00FD59EE /* RemoteRewardsClientFabric.swift */,
+				E6F39D212A06B77E00FD59EE /* MockRewardsClientFabric.swift */,
+				E6BE84522A069352006B8690 /* RewardsClient */,
+				E6F39D0A2A06A41D00FD59EE /* TransactionsClient */,
+				E6F39D152A06B5D800FD59EE /* TransactionClient */,
+			);
+			path = RewardsClientFabric;
+			sourceTree = "<group>";
+		};
+		E6F39D3D2A07B11C00FD59EE /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				BBBE93C02745E41F007B24DD /* Account.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +325,29 @@
 			dependencies = (
 			);
 			name = "SwiftUI Developement";
+			packageProductDependencies = (
+			);
 			productName = "SwiftUI Developement";
 			productReference = BB29304D27452175005E81FC /* SwiftUI Assessment.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E6BE84562A0697C5006B8690 /* SwiftUI AssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BE845D2A0697C5006B8690 /* Build configuration list for PBXNativeTarget "SwiftUI AssessmentTests" */;
+			buildPhases = (
+				E6BE84532A0697C5006B8690 /* Sources */,
+				E6BE84542A0697C5006B8690 /* Frameworks */,
+				E6BE84552A0697C5006B8690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BE845C2A0697C5006B8690 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI AssessmentTests";
+			productName = "SwiftUI AssessmentTests";
+			productReference = E6BE84572A0697C5006B8690 /* SwiftUI AssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -172,11 +356,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					BB29304C27452175005E81FC = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					E6BE84562A0697C5006B8690 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = BB29304C27452175005E81FC;
 					};
 				};
 			};
@@ -189,11 +377,14 @@
 				Base,
 			);
 			mainGroup = BB29304427452175005E81FC;
+			packageReferences = (
+			);
 			productRefGroup = BB29304E27452175005E81FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BB29304C27452175005E81FC /* SwiftUI Developement */,
+				E6BE84562A0697C5006B8690 /* SwiftUI AssessmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +399,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6BE84552A0697C5006B8690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,22 +413,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F39D2A2A06BD1E00FD59EE /* TransactionListItem.swift in Sources */,
 				BBD307EC274B019300CDD95A /* Date.swift in Sources */,
+				E6F39D2E2A06CD6F00FD59EE /* Navigation.swift in Sources */,
+				E6BE844A2A0690C0006B8690 /* RewardsViewModel.swift in Sources */,
 				BBD307EE274B11AF00CDD95A /* Int.swift in Sources */,
 				BBA1FC48274844BA0049BEE9 /* CurrentBalance.swift in Sources */,
+				E6F39D3C2A07B0B000FD59EE /* RandomAccessCollection+Extension.swift in Sources */,
+				E6F39D142A06B53400FD59EE /* MockTransactionsClient.swift in Sources */,
+				E6F39D282A06BB6600FD59EE /* TransactionsListView.swift in Sources */,
 				BBBE93BF2745E263007B24DD /* MainContainer.swift in Sources */,
 				BB19C28D27462FE000C64FF9 /* APIService.swift in Sources */,
+				E6F39D3F2A07B57B00FD59EE /* ColorConstants.swift in Sources */,
+				E6F39D172A06B5EC00FD59EE /* TransactionClient.swift in Sources */,
 				BB19C2902746347700C64FF9 /* AccountViewModel.swift in Sources */,
+				E6F39D0E2A06A53700FD59EE /* RemoteRewardsClient.swift in Sources */,
+				E6F39D202A06B71C00FD59EE /* RemoteRewardsClientFabric.swift in Sources */,
 				BB29305127452175005E81FC /* SwiftUI.swift in Sources */,
 				BB19C2852746172A00C64FF9 /* UserInfoItem.swift in Sources */,
+				E6BE84512A06934C006B8690 /* RewardsClient.swift in Sources */,
+				E6BE84462A068FD7006B8690 /* RewardsView.swift in Sources */,
+				E6BE844E2A069168006B8690 /* TransactionModel.swift in Sources */,
+				E6F39D0C2A06A43400FD59EE /* TransactionsClient.swift in Sources */,
 				BB19C283274613B900C64FF9 /* KeyValueListItem.swift in Sources */,
+				E6F39D2C2A06C91C00FD59EE /* View+Extension.swift in Sources */,
 				BBBE93C12745E41F007B24DD /* Account.swift in Sources */,
 				BB19C28A27462FAC00C64FF9 /* AccountInfo.swift in Sources */,
+				E6F39D1D2A06B69E00FD59EE /* RewardsClientFabric.swift in Sources */,
+				E6BE84432A068075006B8690 /* CreditCardView.swift in Sources */,
+				E6BE844C2A069137006B8690 /* RewardsModel.swift in Sources */,
+				E6F39D102A06A56200FD59EE /* MockRewardsClient.swift in Sources */,
 				BBA1FC4A274844CB0049BEE9 /* TransactionDetail.swift in Sources */,
+				E6F39D192A06B60D00FD59EE /* RemoteTransactionClient.swift in Sources */,
+				E6F39D122A06B50000FD59EE /* RemoteTransactionsClient.swift in Sources */,
+				E6F39D222A06B77E00FD59EE /* MockRewardsClientFabric.swift in Sources */,
+				E6F39D302A06D20900FD59EE /* CommonComponents.swift in Sources */,
+				E6F39D242A06B80F00FD59EE /* TransactionDetailsViewModel.swift in Sources */,
+				E6F39D1B2A06B64D00FD59EE /* MockTransactionClient.swift in Sources */,
+				E6BE84482A069017006B8690 /* TransactionDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BE84532A0697C5006B8690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BE845A2A0697C5006B8690 /* APIServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6BE845C2A0697C5006B8690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB29304C27452175005E81FC /* SwiftUI Developement */;
+			targetProxy = E6BE845B2A0697C5006B8690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BB29305927452177005E81FC /* Debug */ = {
@@ -413,6 +653,44 @@
 			};
 			name = Release;
 		};
+		E6BE845E2A0697C5006B8690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crossover.SwiftUI.SwiftUI-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Assessment";
+			};
+			name = Debug;
+		};
+		E6BE845F2A0697C5006B8690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crossover.SwiftUI.SwiftUI-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Assessment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +708,15 @@
 			buildConfigurations = (
 				BB29305C27452177005E81FC /* Debug */,
 				BB29305D27452177005E81FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BE845D2A0697C5006B8690 /* Build configuration list for PBXNativeTarget "SwiftUI AssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BE845E2A0697C5006B8690 /* Debug */,
+				E6BE845F2A0697C5006B8690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

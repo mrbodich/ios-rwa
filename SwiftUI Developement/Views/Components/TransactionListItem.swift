@@ -7,47 +7,41 @@ struct TransactionListItem: View {
 	var birdEarned: Bool?;
 
     var body: some View {
-		HStack(alignment: .top, spacing: 16) {
+		HStack(alignment: .top, spacing: 8) {
 			VStack(alignment: .leading) {
-				Text(title)
-					.font(.headline)
-					.bold()
-					.truncationMode(.middle)
-					.lineLimit(1)
+                HStack(spacing: 4) {
+                    Text(title)
+                        .font(.headline)
+                        .bold()
+                        .truncationMode(.middle)
+                        .lineLimit(1)
+                    if birdEarned == true {
+                        Image("BirdSmall")
+                    }
+                }
 				Text(transactionDate, format: .dateTime.day().month().year())
 					.font(.subheadline)
 			}
 			Spacer()
-			Text(String(format: "$%.2f", amount))
-				.font(.headline)
-				.bold()
-		}.frame(maxWidth: .infinity)
+            HStack(spacing: 10) {
+                Text(String(format: "$%.2f", amount).replacingOccurrences(of: "$-", with: "-$"))
+                    .font(.headline)
+                    .bold()
+                Image("ArrowRight")
+            }
+		}
+        .foregroundColor(ThemeColor.listRowText)
+        .frame(maxWidth: .infinity)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static let dynamicSizes: [DynamicTypeSize] = [
-		.xSmall,
-		.large,
-		.xxxLarge
-	];
 	static var previews: some View {
-		Group() {
-			ForEach(dynamicSizes, id: \.self) { size in
-				TransactionListItem(
-					title: "Starbucks Testing Long Item",
-					transactionDate: Date.now,
-					amount: 10.54
-				).environment(\.dynamicTypeSize, size)
-					.previewDisplayName("\(size)")
-			}
-			TransactionListItem(
-				title: "Starbucks",
-				transactionDate: Date.now,
-				amount: 10.54
-			).background(Color(.systemBackground))
-				.environment(\.colorScheme, .dark)
-				.previewDisplayName("dark")
-		}.previewLayout(.sizeThatFits)
+        TransactionListItem(
+            title: "Starbucks Testing Long Item",
+            transactionDate: Date.now,
+            amount: 10.54
+        )
+        .exhaustivePreview()
     }
 }
